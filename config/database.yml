@@ -14,6 +14,7 @@ development:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password: password
+  database: sample_app
   host: db
 
 # Warning: The database defined as "test" will be erased and
@@ -22,11 +23,11 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: sample_mysql_test
+  database: sample_app
   pool: 5
   username: root
-  password:
-  host: localhost
+  password: password
+  host: db
 
 production:
   adapter: mysql2
@@ -34,5 +35,6 @@ production:
   database: sample_mysql_production
   pool: 5
   username: root
-  password:
+  password: password
+  database: sample_app
   host: localhost
