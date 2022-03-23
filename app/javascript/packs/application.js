@@ -10,6 +10,7 @@ import "channels"
 import '../stylesheets/application.scss'
 require('jquery'); // jQueryを追加
 require('bootstrap'); // Bootstrapを追加
+//= require rails-ujs
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
